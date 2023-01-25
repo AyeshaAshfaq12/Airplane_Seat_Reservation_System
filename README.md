@@ -12,4 +12,53 @@
 Admin can also see which seats are reserved and which are available. 
 </p>
 <br>
+<!--.................................................................................................................................-->
+
+### Advantages
+
+<br>
+The advantages of system can be pinpointed to the following:
+
+-	Time-saving Technology
+-	Improved Efficiency by avoiding human errors
+-	Reduces scope for Error
+-	Data security and correct data retrieval made possible
+-	Cost effective and easily manageable
+-	Easy access to patient data
+-	Improved patient care made possible
+-	Reduces the work of documentation
+-	Can store information in an effective manner
+<br>
+
 <!-- ................................................................................................................................. -->
+
+
+### C++ Libraries used
+<br>
+Libraries of C++ used in development of this system:
+
+- iostream
+- conio.h
+- windows.h
+- stdlib.h
+- string
+- fstream
+
+<br>
+<!-- .................................... -->
+
+### Technology Stack
+<br>
+Follwing technologies have been used in development of this system:
+
+- C++
+
+<!-- .................................... -->
+
+<br>
+
+### GUI
+Some GUI Images
+<br>
+<!-- ................................................................................................................................. -->
+
