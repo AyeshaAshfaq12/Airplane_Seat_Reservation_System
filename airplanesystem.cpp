@@ -42,14 +42,14 @@ main()
     {
         if (option == 1)
         {
-            header();
+            //header();
             display();
             clearScreen();
-            header();
+            //header();
             category();
             reserve();
             clearScreen();
-            header();
+            //header();
             updated_array();
             clearScreen();
             store(file_name);
@@ -79,14 +79,15 @@ main()
 void clearScreen()
 {
     cout << endl;
-    SetConsoleTextAttribute(hConsole, 6);
-    cout << "Press any key to continue_";
+    SetConsoleTextAttribute(hConsole, 15);
+    cout << "  Press any key to continue_";
     SetConsoleTextAttribute(hConsole, 15);
     getch();
     system("cls");
 }
 void header()
 {
+    cout << endl;
     cout << endl;
     cout << endl;
     SetConsoleTextAttribute(hConsole, 6);
@@ -106,20 +107,23 @@ int menu()
     cout << "\t\t\t\t\t\t---------------------" << endl;
     cout << endl;
     SetConsoleTextAttribute(hConsole, 3);
-    cout << " -------------------------------" << endl;
-    cout << " | Select one option from menu |" << endl;
-    cout << " -------------------------------" << endl;
+    cout << "  -------------------------------" << endl;
+    cout << "  | Select one option from menu |" << endl;
+    cout << "  -------------------------------" << endl;
+    cout << endl;
     cout << endl;
     SetConsoleTextAttribute(hConsole, 11);
     cout << "\t1. Seat Reservation" << endl;
     cout << "\t2. New Plane" << endl;
     cout << "\t3. Exit" << endl;
     cout << endl;
-    SetConsoleTextAttribute(hConsole, 15);
-    cout << "Your option_";
+    cout << endl;
+    SetConsoleTextAttribute(hConsole, 14);
+    cout << " Your option_";
     int option;
     cin >> option;
     return option;
+    SetConsoleTextAttribute(hConsole, 15);
 }
 void store(string file_name)
 {
@@ -177,9 +181,10 @@ char parseRecord(int field)
 void display()
 {
     cout << endl;
-    cout << "\t\t\t\t\t -------------------------------" << endl;
-    cout << "\t\t\t\t\t |  Airplane Classes and Seats |" << endl;
-    cout << "\t\t\t\t\t -------------------------------" << endl;
+    cout << endl;
+    cout << "\t\t\t\t\t   -------------------------------" << endl;
+    cout << "\t\t\t\t\t   |  Airplane Classes and Seats |" << endl;
+    cout << "\t\t\t\t\t   -------------------------------" << endl;
     cout << endl;
     cout << endl;
     cout << "\t\t\t\t"
@@ -188,7 +193,7 @@ void display()
     for (int i = 0; i < 13; i++)
     {
         cout << "\t\t\t\t"
-             << "Row" << i + 1;
+             << "Row " << i + 1;
         for (int j = 0; j < 6; j++)
         {
             cout << "\t" << seats[i][j] << "      ";
@@ -220,7 +225,7 @@ void category()
         for (int i = 0; i < 2; i++)
         {
             cout << "\t\t\t"
-                 << "Row" << i + 1;
+                 << "Row " << i + 1;
             for (int j = 0; j < 6; j++)
             {
                 cout << "\t" << seats[i][j] << "      ";
@@ -239,7 +244,7 @@ void category()
         for (int i = 2; i < 7; i++)
         {
             cout << "\t\t\t"
-                 << "Row" << i + 1;
+                 << "Row " << i + 1;
             for (int j = 0; j < 6; j++)
             {
                 cout << "\t" << seats[i][j] << "      ";
@@ -258,7 +263,7 @@ void category()
         for (int i = 7; i < 13; i++)
         {
             cout << "\t\t\t"
-                 << "Row" << i + 1;
+                 << "Row " << i + 1;
             for (int j = 0; j < 6; j++)
             {
                 cout << "\t" << seats[i][j] << "      ";
